@@ -20,7 +20,9 @@ var checkHit = setInterval(function(){
         block.style.animation = "none";
         block.style.direction="none";
         block.style.background = "none";
-        alert("Looser");
+        charactor.classList.add("dead");
+        charactor.classList.remove("alive");
+      
     }
 
 }, 10)
