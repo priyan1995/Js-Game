@@ -1,5 +1,6 @@
 var charactor = document.getElementById("charactor");
 var block = document.getElementById("block");
+var overlay = document.getElementById("overlay");
 
 function jump() {
     if (charactor.classList != "animate") {
@@ -22,7 +23,13 @@ var checkHit = setInterval(function(){
         block.style.background = "none";
         charactor.classList.add("dead");
         charactor.classList.remove("alive");
+        overlay.classList.add("d-block")
       
     }
 
 }, 10)
+
+
+function reload(){
+    window.location.reload();
+}
