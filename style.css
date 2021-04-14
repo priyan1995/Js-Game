@@ -4,23 +4,30 @@
 }
 
 #game{
-    width:500px;
+    /* width:500px;
     height:200px;
     border:1px solid gray;
+    background: url('mountain.jpg'); */
+
+    width: 500px;
+    height: 200px;
+    border: none;
+    background: url(mountain.jpg);
+    background-position: 100% 80%;
 }
 
 #charactor{
-    width:50px;
-    height: 50px;
+    width:80px;
+    height: 80px;
     position: relative;
-    top: 150px;     
+    top: 120px;     
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
 }
 
 .alive{
-    background-image:url('running.gif') ;
+    background-image:url('run.gif') ;
 }
 
 .dead{
@@ -34,16 +41,16 @@
 
 @keyframes jump{
     0%{
-        top:150px;
+        top:120px;
     }
     30%{
-        top:100px;
+        top:80px;
     }
     70%{
-        top:100px;
+        top:80px;
     }
     100%{
-        top:150px;
+        top:120px;
     }
 
 }
@@ -56,7 +63,7 @@
     background-repeat: no-repeat;
     position: relative;
     left: 480px;
-    top:130px;   
+    top:100px;   
     animation: block 1.5s linear infinite; 
 }
 

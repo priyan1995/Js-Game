@@ -16,7 +16,7 @@ var checkHit = setInterval(function(){
     var blockleft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
 
     if(
-        blockleft<35 && blockleft>0 && charactorTop >= 130
+        blockleft<35 && blockleft>0 && charactorTop >= 100
     ){
         block.style.animation = "none";
         block.style.direction="none";
